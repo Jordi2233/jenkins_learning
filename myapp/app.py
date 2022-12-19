@@ -1,4 +1,5 @@
 import fire
+from termcolor import colored
 
 
 def hello(name="World"):
@@ -6,4 +7,4 @@ def hello(name="World"):
 
 
 if __name__ == '__main__':
-    fire.Fire(hello)
+    fire.Fire(colored(hello, 'red'))
