@@ -3,8 +3,8 @@ from termcolor import colored
 
 
 def hello(name="World"):
-    return "Hello %s!" % name
+    return colored("Hello %s!" % name, "green")
 
 
 if __name__ == '__main__':
-    fire.Fire(colored(hello, 'red'))
+    fire.Fire(hello)
